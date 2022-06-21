@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{ font-size: 12px;}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    background-color: #3c3c3c;
+}
+
+.PD30{    padding: 30px;}
+
+/*----------------------------------
+INICIO ESTRUCTURA
+-----------------------------------*/
+
+.containergrid{
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: auto 600px auto auto 55px;
+    grid-template-areas:"nav nav"
+                        "principal principal"
+                        "comofunciona caracteristicas"
+                        "comofunciona caracteristicas"
+                        "footer footer";
+}
+
+.nav{
+    grid-area: nav;
+}
+.principal{
+    grid-area: principal;
+    background: url(../links/portada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.comofunciona{
+    grid-area: comofunciona;
+    background: linear-gradient(45deg, #00dacb, #005ea8, #1a002d);
+}
+.caracteristicas{
+    grid-area: caracteristicas;
+    background: linear-gradient(-45deg, #00dacb, #005ea8, #1a002d);
+}
+.footer{
+    grid-area: footer;
+    background-color: #000000;
+    height: 55px;
+    border-top: 2px solid #00ffcb;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+
+/*----------------------------------
+FIN ESTRUCTURA
+-----------------------------------*/
+
+#logoheader {height: 23px;}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li{ padding-left: 25px;}
+nav ul li :hover{ color: #00dacb;}
+
+.barramenu{
+    height: 40px;
+    background: linear-gradient(#3c3c3c, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.principal img{
+    width: 100%;
+}
+
+.PD30{
+    padding: 30px;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.bajada{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.subtitulo{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.subtitulo2{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.comofunciona img {
+    width: 350px;
+    padding: 20px;
+    animation-name: aparecer_izq;
+    animation-duration: 1s;
+}
+
+.comofunciona__detalle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.comofunciona__detalle__txt{
+    padding: 20px;
+    width: 350px;
+}
+
+.titulo{
+    font-weight: 700;
+    font-size: 20px;
+    color:#83ff77;
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caracteristicas__detalle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.caracteristicas__detalle__iconos {
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    font-size: 14px;
+    color:#FFFFFF;
+}
+
+.detalles__titulo{
+    font-weight: 900;
+    font-size: 18px;
+}
+.caracteristicas__detalle__iconos img{
+    width: 100px;
+}
+
+/*----------------------------------
+Otras PAG
+-----------------------------------*/
+
+.slider{
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s__ficha{
+    background: url(../links/Slider01.jpg);
+}
+
+.s__conectividad{
+    background: url(../links/Slider02.jpg);
+}
+
+.slidertxt{
+    max-width: 700px;
+    
+}
+
+.slidertxt__titulos{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 65px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.slidertxt_bajadas{
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.conectividad{
+    background: linear-gradient(45deg, #250373, #380142, #3e012e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto{
+    background-color: #090924;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa{
+    width: 100%;
+    height: 300px;
+}
+
+.contacto_segundaparte{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contacto__txt{
+    width: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.titulo__contacto{
+    font-weight: 700;
+    font-size: 20px;
+}
+.contacto__txt__icono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.contacto__txt__icono img{
+    max-width: 30px;
+    padding-right: 10px;
+}
+
+fieldset{
+    border: 0;
+}
+
+.expRomba{
+    background: linear-gradient(#330c84, #040411);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video{
+    margin: 20px;
+}
+
+/*-----------------------
+START - FICHA TECNICA
+-------------------------*/
+.FichaTecnica{
+    background: linear-gradient(45deg, #190065, #280034, #32001b);
+}
+
+.FT_grid{
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:"FT_titulo FT_titulo"
+                        "FT_detalle FT_img";
+}
+
+.FT_titulo{
+    grid-area: FT_titulo;
+    color: #FFFFFF;
+}
+.FT_detalle{
+    grid-area: FT_detalle;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-self: right;
+    font-size: 14px;
+    line-height: 20px;
+    animation-name: aparecer_izq;
+    animation-duration: 1s;    
+}
+
+.FT_img{
+    grid-area: FT_img;
+    color: #FFFFFF;
+    align-items: center;
+    justify-self: left;
+    animation-name: aparecer_der;
+    animation-duration: 1s;
+}
+
+.FichaTecnica img {
+    width: 350px;
+    padding: 20px;
+}
+
+/*-----------------------
+FIN - FICHA TECNICA
+-------------------------*/
+
+
+/*-----------------------
+START- CONECTIVIDAD
+-------------------------*/
+.Con_grid{
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns:30% auto;
+    grid-template-areas:"Con_titulo Con_titulo"
+                        "Con_img Con_txt"
+                        "Con_img Con_stores";
+}
+
+.Con_titulo{
+    grid-area: Con_titulo;
+}
+
+.Con_img{
+    grid-area: Con_img;
+    justify-self: right;
+}
+
+.Con_img img{
+   max-height: 450px;
+   animation-name: aparecer_izq;
+   animation-duration: 1s;
+}
+
+.Con_txt{
+    grid-area: Con_txt;
+    justify-self: left;
+    align-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    animation-name: aparecer_der;
+    animation-duration: 1s;
+}
+
+.Con_stores{
+    grid-area: Con_stores;
+    margin: 0 auto;
+}
+
+.conectividad__txt__icono{
+   display: flex;
+   align-items: center;
+   margin: 15px;
+}
+
+.conectividad__txt__icono img{
+    width: 100px;
+}
+
+
+.Con_stores img{max-width: 130px;}
+
+/*-----------------------
+FIN- CONECTIVIDAD
+-------------------------*/
+
+
+/*-----------------------
+START- ANIMACIONES
+-------------------------*/
+@keyframes aparecer_izq{
+    0%{transform: translate(-50px,0px);
+       opacity: 0;}
+    100%{transform: translate(0px,0px);}
+}
+
+@keyframes aparecer_der{
+    0%{transform: translate(50px,0px);
+       opacity: 0;}
+    100%{transform: translate(0px,0px);}
+}
+
+/*-----------------------
+FIN- ANIMACIONES
+-------------------------*/
+
+
+/*-----------------------
+START - MEDIAS
+-------------------------*/
+@media screen and (max-width: 1200px){
+    
+    .containergrid{
+        grid-template-rows: auto 500px auto auto 55px;
+        grid-template-areas:"nav nav"
+                            "principal principal"
+                            "comofunciona comofunciona"
+                            "caracteristicas caracteristicas"
+                            "footer footer";
+    }
+
+    .FT_grid{
+        margin: 0 auto;
+        grid-template-columns:auto;
+        grid-template-areas:"FT_titulo"
+                            "FT_img "
+                            "FT_detalle";
+    }
+    .FT_detalle{
+        justify-self: center;
+        text-align: center;
+    }
+    .FT_img{
+        justify-self: center;
+    }  
+}
+
+@media screen and (max-width: 900px){
+    .Con_grid{
+        max-width: 600px;
+        justify-self: center;
+        grid-template-columns:auto;
+        grid-template-areas:"Con_titulo"
+                            "Con_img"
+                            "Con_txt"
+                            "Con_stores";
+    }
+
+    .Con_img{
+        justify-self: center;
+    } 
+    .Con_img img {
+        max-height: 350px;
+    }
+
+
+
+}
