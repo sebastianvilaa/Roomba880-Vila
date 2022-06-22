@@ -352,7 +352,7 @@ FIN - FICHA TECNICA
 START- CONECTIVIDAD
 -------------------------*/
 .Con_grid{
-    max-width: 700px;
+    max-width: 1100px;
     margin: 0 auto;
 
     display: grid;
