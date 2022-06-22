@@ -352,7 +352,7 @@ FIN - FICHA TECNICA
 START- CONECTIVIDAD
 -------------------------*/
 .Con_grid{
-    max-width: 1000px;
+    max-width: 700px;
     margin: 0 auto;
 
     display: grid;
@@ -381,7 +381,7 @@ START- CONECTIVIDAD
     grid-area: Con_txt;
     justify-self: left;
     align-self: center;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
     animation-name: aparecer_der;
